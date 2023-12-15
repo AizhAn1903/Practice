@@ -5,16 +5,37 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Введите первое число");
+        double num = sc.nextInt();
+        System.out.println("Введите второе число");
+        double num2 = sc.nextInt();
 
-        int num = sc.nextInt();
-        int num2 = sc.nextInt();
+        System.out.println("выберите действие");
+        System.out.println("1 - умножение");
+        System.out.println("2 - деление");
+        System.out.println("3 - сложение");
+        System.out.println("4 - вычитание");
+        int choice = sc.nextInt();
 
+            switch (choice) {
+                case 1:
+                    System.out.println("result "+ multiply(num, num2));
+                    break;
+                case 2:
+                    System.out.println("result "+ divide(num, num2));
+                    break;
+                case 5:
+                    System.out.println("exiting");
+                    return;
+                default:
+                    System.out.println("error");
+            }
+        }
+    public static double multiply(double num, double num2){
+        return num * num2;
     }
-    public void multiply(int num, int num2){
-        int multiplyResult = num *num2;
-    }
 
-    public void divide(int num, int num2){
-        int divideResult = num / num2;
+    public static double divide(double num, double num2){
+        return num / num2;
     }
 }
