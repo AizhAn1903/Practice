@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите первое число");
-        double num = sc.nextInt();
+        double num = sc.nextDouble();
         System.out.println("Введите второе число");
-        double num2 = sc.nextInt();
+        double num2 = sc.nextDouble();
 
         System.out.println("выберите действие");
         System.out.println("1 - умножение");
