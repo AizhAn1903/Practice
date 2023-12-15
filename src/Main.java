@@ -24,6 +24,12 @@ public class Main {
                 case 2:
                     System.out.println("result "+ divide(num, num2));
                     break;
+                case 3:
+                    System.out.println("result "+sum(num,num2));
+                    break;
+                case 4:
+                    System.out.println("result "+minus(num,num2));
+                    break;
                 case 5:
                     System.out.println("exiting");
                     return;
@@ -37,5 +43,11 @@ public class Main {
 
     public static double divide(double num, double num2){
         return num / num2;
+    }
+    public static double sum(double num, double num2){
+        return num + num2;
+    }
+    public static double minus(double num, double num2){
+        return num - num2;
     }
 }
