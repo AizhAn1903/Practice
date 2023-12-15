@@ -10,10 +10,16 @@ public class Main {
         int num2 = sc.nextInt();
 
     }
-    public static void subtraction (int num, int num2) {
+
+
+
+
+    public static double  subtraction (int num, int num2) {
         double result = num + num2;
+        return result;
     }
-    public static void amount (int num, int num2) {
+    public static double amount (int num, int num2) {
         double result = num - num2;
+        return  result;
     }
 }
